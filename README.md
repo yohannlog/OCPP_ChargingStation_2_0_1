@@ -4,6 +4,8 @@
 This is a simulator for the latest version of the OCPP [(Open Charge Point Protocol)](https://www.openchargealliance.org/) protocol, for the version 2.0.1.
 It is currently under development and will allow you to test the server part if you don't have a charging station for this purpose.
 
+In the future, the user will be able to choose a type of terminal among those presented [here](https://github.com/RWTH-i5-IDSG/steve/wiki/Charging-Station-Compatibility)
+
 This project use :
 * **Java 14** : This project use Java 14 with the exprimental feature called '[record](https://openjdk.java.net/jeps/359)'. This version is also used to have a less heavy application thanks to the modules system and to have the latest innovation of the language.
 * **Gson** : A Java library that can be used to convert Java Objects into their Json Representation or convert Json string to an equivalent Java object. View [Gson in github](https://github.com/google/gson) for more informations.
@@ -17,3 +19,4 @@ You can find more details on the [official website](https://www.openchargeallian
 # Presentation
 
 This part will be available when the software is finished !!
+

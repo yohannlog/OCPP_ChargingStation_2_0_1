@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import fr.yohann.bsim.controller.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="dashboard" alignment="CENTER" prefHeight="505.0" prefWidth="817.0" stylesheets="@../styles/Adreana.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.yohann.bsim.controller.DashboardController">
+    <children>
+        <HBox alignment="CENTER" maxHeight="70.0" minHeight="70.0" spacing="20.0" VBox.vgrow="ALWAYS">
+            <children>
+            <Label prefHeight="26.0" prefWidth="103.0" text="Adresse" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+                  <TextField fx:id="ipField" maxHeight="35.0" minHeight="35.0" promptText="Adresse IP" text="172.19.32.41" HBox.hgrow="ALWAYS">
+                      <font>
+                          <Font size="15.0" />
+                      </font>
+                  </TextField>
+            <Label prefHeight="26.0" prefWidth="77.0" text="Port" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <TextField fx:id="portField" layoutX="104.0" layoutY="28.0" maxHeight="35.0" minHeight="35.0" promptText="Port" style="-fx-background-color: #707070;" text="4919">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="26.0" prefWidth="85.0" text="Nom" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nomBorne" layoutX="344.0" layoutY="28.0" maxHeight="35.0" minHeight="35.0" promptText="Port" style="-fx-background-color: #707070;" text="CP001">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+                    <JFXButton fx:id="sendButton" defaultButton="true" graphicTextGap="10.0" minWidth="36.0" prefHeight="31.0" prefWidth="50.0" ripplerFill="WHITE" text=" " textAlignment="CENTER" textFill="WHITE">
+                        <padding>
+                            <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                        </padding>
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <graphic>
+                            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@../assets/Send.png" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                    </JFXButton>
+            <JFXButton fx:id="sendButton1" defaultButton="true" graphicTextGap="10.0" layoutX="752.0" layoutY="30.0" minWidth="34.0" prefHeight="31.0" prefWidth="34.0" ripplerFill="WHITE" text=" " textAlignment="CENTER" textFill="WHITE">
+               <padding>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/Search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            </children>
+            <padding>
+                <Insets left="20.0" right="20.0" />
+            </padding>
+        </HBox>
+        <SplitPane dividerPositions="0.1" orientation="VERTICAL" VBox.vgrow="ALWAYS">
+            <items>
+                <AnchorPane maxHeight="200.0" minHeight="140.0" prefWidth="797.0">
+                    <children>
+                        <TabPane fx:id="requestOptionsTab" minHeight="190.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <tabs>
+                                <Tab fx:id="paramsTab" closable="false" text="Trames envoyées">
+                                    <content>
+                                        <VBox>
+                                            <children>
+                                                <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+                                                    <content>
+                                                        <VBox fx:id="paramsBox" alignment="TOP_CENTER" prefWidth="797.0">
+                                                            <padding>
+                                                                <Insets bottom="10.0" top="10.0" />
+                                                            </padding>
+                                                        </VBox>
+                                                    </content>
+                                                </ScrollPane>
+                                            </children>
+                                        </VBox>
+                                    </content>
+                                </Tab>
+                            </tabs>
+                        </TabPane>
+                    </children>
+               <padding>
+                  <Insets bottom="2.0" />
+               </padding>
+                </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="200.0" minHeight="140.0">
+               <children>
+                  <TabPane fx:id="requestOptionsTab1" minHeight="190.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <tabs>
+                        <Tab fx:id="paramsTab1" closable="false" text="Trames reçus">
+                           <content>
+                              <VBox>
+                                 <children>
+                                    <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+                                       <content>
+                                          <VBox fx:id="paramsBox1" alignment="TOP_CENTER">
+                                             <padding>
+                                                <Insets bottom="10.0" top="10.0" />
+                                             </padding>
+                                          </VBox>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+            </items>
+        </SplitPane>
+      <HBox fx:id="prises" fillHeight="false" VBox.vgrow="ALWAYS">
+         <SplitPane dividerPositions="0.29797979797979796, 0.5" prefHeight="38.0" prefWidth="652.0">
+           <items>
+                <Prise />
+               <Prise />
+               <Prise />
+           </items>
+         </SplitPane>
+      </HBox>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" />
+    </padding>
+</VBox>

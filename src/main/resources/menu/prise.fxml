@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root minWidth="200" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+      <TextField alignment="CENTER" editable="false" prefWidth="200.0" text="Prise">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></TextField>
+      <VBox prefHeight="102.0" prefWidth="200.0">
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+         <children>
+            <TextField alignment="CENTER" editable="false" text="Etat" />
+            <RadioButton fx:id="noDispo" disable="true" mnemonicParsing="false" prefHeight="30.0" prefWidth="95.0" text="Indisponible" textFill="WHITE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="inCharge" disable="true" mnemonicParsing="false" text="En charge" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="free" disable="true" mnemonicParsing="false" selected="true" text="Libre" textFill="WHITE" />
+         </children>
+      </VBox>
+      <VBox prefHeight="114.0" prefWidth="200.0">
+         <children>
+            <TextField alignment="CENTER" editable="false" text="Authentification">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></TextField>
+            <TextField editable="false" text="Code (20 caractères max) :" />
+         <TextField />
+            <TextField editable="false" text="Reservation" />
+         <TextField />
+         </children>
+      </VBox>
+   <Button alignment="CENTER" mnemonicParsing="false" text="Charger" />
+   <Button mnemonicParsing="false" text="Débrancher" />
+</fx:root>

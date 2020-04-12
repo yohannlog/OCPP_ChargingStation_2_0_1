@@ -1,0 +1,432 @@
+/*
+ * Copyright 2018 Rohit Awate.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#dashboard {
+	-fx-background-color: #505050;
+}
+
+#addressSection {
+    -fx-background-color: #6e6e6e;
+}
+
+#ipField {
+    -fx-background-color: #707070;
+	-fx-text-fill: white;
+}
+
+#portField {
+    -fx-background-color: #707070;
+	-fx-text-fill: white;
+}
+
+
+.combo-box {
+    -fx-background-color: #282828;
+    -fx-background-radius: 0px;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #282828;
+    -fx-pref-height: 35px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #d4d4d4;
+    -fx-padding: 0 0 0 10px;
+}
+
+#comboContainer {
+    -fx-background-color: #282828;
+}
+
+.combo-box:showing .list-cell:hover,
+.combo-box:showing .list-cell:selected {
+	-fx-background-color: orangered;
+	-fx-text-fill: white;
+}
+
+.combo-box .arrow-button .arrow {
+    -fx-background-color: white;
+}
+
+.combo-box:showing {
+    -fx-background-color: orangered;
+    -fx-text-fill: black;
+}
+
+.combo-box .list-view {
+    -fx-background-color: transparent;
+}
+
+#connectButton,
+#sendButtonPane {
+    -fx-background-color: #282828;
+}
+
+#responseDetails {
+    -fx-background-color: #1b1b1b;
+}
+
+#copyBodyButton {
+    -fx-background-color: transparent;
+}
+
+#clearResponseAreaButton {
+    -fx-background-color: #822f2f;
+}
+
+#loadingLayer {
+    -fx-background-color: #bf8829;
+}
+
+#promptLayer {
+    -fx-background-color: #273154;
+}
+
+#errorLayer {
+    -fx-background-color: #822f2f;
+}
+
+#cancelButton {
+    -fx-background-color: black;
+}
+
+/* Home window tab */
+#tabPane:top .tab-header-area .headers-region .tab:top .tab-container .tab-close-button {
+    -fx-background-color: white;
+}
+
+#tabPane:top .tab-header-area .headers-region .tab:hover:top {
+    -fx-background-color: orangered;
+}
+
+#tabPane:top .tab-header-area .headers-region .tab:selected:top {
+    -fx-background-color: #505050;
+}
+
+.tab-pane .tab-header-area {
+    -fx-padding: 0;
+}
+
+.tab-pane:top .tab-header-area .tab-header-background {
+    -fx-background-color: #6a6a6a;
+}
+
+.tab-pane .tab-content-area,
+#headerTabContent,
+#headerField,
+#headersBox,
+.scroll-pane,
+.scroll-pane .viewport,
+.virtualized-scroll-pane .scroll-bar:vertical,
+.virtualized-scroll-pane .scroll-bar:horizontal,
+.scroll-pane .scroll-bar:vertical,
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: #3d3d3d;
+    -fx-background-insets: 0px;
+}
+
+.scroll-pane {
+    -fx-padding: 0px;
+}
+
+/* Tab attributes */
+.tab {
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+#newTabButton {
+    -fx-background-color: #6a6a6a;
+}
+
+#newTabButton:hover {
+    -fx-background-color: cornflowerblue;
+}
+
+.tab-pane:top .tab-header-area .headers-region .tab:top {
+    -fx-background-color: #6a6a6a;
+}
+
+/* Tab titles */
+.tab-pane:top .tab-header-area .headers-region .tab:top .tab-container .tab-label .text {
+    -fx-fill: white;
+}
+
+.tab:selected .tab-close-button:hover {
+    -fx-background-color: #282828;
+}
+
+/* Request options (Headers, Authorization, etc) tab */
+#requestOptionsTab .tab-header-area .headers-region .tab:hover:top {
+    -fx-background-color: #55a15c;
+}
+
+#requestOptionsTab .tab-header-area .headers-region .tab:selected:top {
+    -fx-background-color: #3d3d3d;
+}
+
+/* Body tab pane */
+#authTabPane:top .tab-header-area .tab-header-background,
+#authTabPane:top .tab-header-area .headers-region .tab:top,
+#bodyTabPane:top .tab-header-area .tab-header-background,
+#bodyTabPane:top .tab-header-area .headers-region .tab:top {
+    -fx-background-color: #545454;
+}
+
+#bodyTabPane .tab-content-area,
+#bodyTabPane .scroll-pane .viewport {
+    -fx-background-color: #3d3d3d;
+}
+
+#authTabPane:top .tab-header-area .headers-region .tab:hover:top,
+#bodyTabPane:top .tab-header-area .headers-region .tab:hover:top {
+    -fx-background-color: #4e848f;
+}
+
+#authTabPane:top .tab-header-area .headers-region .tab:selected:top,
+#bodyTabPane:top .tab-header-area .headers-region .tab:selected:top {
+    -fx-background-color: #3d3d3d;
+}
+
+.virtualized-scroll-pane .scroll-bar .thumb,
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color: #808080;
+}
+
+.split-pane {
+    -fx-background-color: #505050;
+    -fx-padding: 0px;
+}
+
+.split-pane .split-pane-divider {
+    -fx-background-color: #505050;
+}
+
+.split-pane:horizontal .split-pane-divider {
+    -fx-padding: 0px;
+}
+
+.KVField {
+    -fx-prompt-text-fill: #919191;
+    -fx-background-color: #303030;
+    -fx-text-fill: white;
+}
+
+/* Binary tab */
+#filePathBox, #filePathField {
+    -fx-prompt-text-fill: #919191;
+    -fx-background-color: #303030;
+    -fx-text-fill: white;
+}
+
+#fileKeyField, #fileValueField {
+    -fx-prompt-text-fill: #cdcdcd;
+    -fx-background-color: #656565;
+    -fx-text-fill: white;
+}
+
+#addHeaderButton, #newStringKVButton, #newParamButton {
+    -fx-background-color: orangered;
+}
+
+#addHeaderButton:hover, #newStringKVButton:hover, #newParamButton:hover {
+    -fx-background-color: #AE2400;
+}
+
+#newFileKVButton, #appendParamsButton {
+    -fx-background-color: #5d53b1;
+}
+
+#newFileKVButton:hover, #appendParamsButton:hover {
+    -fx-background-color: #7373EE;
+}
+
+#browseButton {
+    -fx-background-color: #bababa;
+}
+
+#browseButton:hover {
+    -fx-background-color: #d4d4d4;
+}
+
+/* History tab */
+#searchScrollPane,
+#searchScrollPane .viewport,
+#searchScrollPane .scroll-bar:vertical,
+#searchScrollPane .scroll-bar:horizontal {
+    -fx-background-color: #1A6E4D;
+}
+
+#historyScrollPane,
+#historyScrollPane .viewport,
+#historyScrollPane .scroll-bar:vertical,
+#historyScrollPane .scroll-bar:horizontal {
+    -fx-background-color: #404040;
+}
+
+#historyPane, #historyTab {
+    -fx-background-color: #404040;
+}
+
+#searchBox, #searchLayer {
+    -fx-background-color: #1A6E4D;
+}
+
+#searchFailedLayer {
+    -fx-background-color: #822f2f;
+}
+
+#historySearchFieldBox {
+    -fx-background-color: #303030;
+}
+
+.searchTextField {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+/* History item */
+#methodLabel {
+    -fx-font-family: sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+#historyItemBox {
+    -fx-background-color: #353535;
+}
+
+#historyItemBox:hover {
+    -fx-background-color: #282828;
+}
+
+#rawInputArea {
+    -fx-font-size: 15px;
+}
+
+/* ---------------------------- TreeVisualizer ------------------------- */
+#responseTabPane:bottom .tab-header-area .tab-header-background,
+#responseTabPane:bottom .tab-header-area .headers-region .tab:bottom {
+    -fx-background-color: #282828;
+}
+
+#responseTabPane:bottom .tab-header-area .headers-region .tab:bottom .tab-container .tab-label .text {
+    -fx-fill: white;
+}
+
+#responseTabPane:bottom .tab-header-area .headers-region .tab:hover:bottom {
+    -fx-background-color: purple;
+}
+
+#responseTabPane:bottom .tab-header-area .headers-region .tab:selected:bottom {
+    -fx-background-color: #3d3d3d;
+}
+
+#responseTabPane .tab-content-area,
+#responseTabPane .scroll-pane .viewport {
+    -fx-background-color: #2a2a2a;
+}
+
+#rawInputTypeBox,
+#responseTypeBox {
+    -fx-background-color: #505050;
+}
+
+#rawInputTypeBox .list-cell,
+#responseTypeBox .list-cell {
+    -fx-text-fill: azure;
+    -fx-font-size: 13px;
+    -fx-background-color: #505050;
+}
+
+#rawInputTypeBox .list-cell:hover,
+#responseTypeBox .list-cell:hover {
+    -fx-background-color: cornflowerblue;
+}
+
+/* Response Headers Viewer */
+.response-header-label {
+    -fx-font-family: "Liberation Mono", "Consolas", "Courier New", "Monaco", "DejaVu Sans Mono", monospace;
+}
+
+.response-header-key-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #bababa;
+    -fx-font-weight: bold;
+}
+
+.response-header-value-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #959595;
+}
+
+/* Tree Visualizer */
+.tree-view {
+    -fx-background-color: #353535;
+}
+
+.tree-cell .tree-disclosure-node .arrow {
+    -fx-background-color: orangered;
+}
+
+.tree-cell:selected .tree-disclosure-node .arrow,
+.tree-cell:focused .tree-disclosure-node .arrow {
+    -fx-background-color: white;
+}
+
+.tree-cell {
+    -fx-background-color: #282828;
+    -fx-text-fill: azure;
+    -fx-font-size: 14px;
+    -fx-font-family: "Liberation Mono", "Consolas", "Courier New", "Monaco", "DejaVu Sans Mono", monospace;
+    -fx-border-width: 0px;
+}
+
+.tree-cell:expanded {
+    -fx-background-color: #454545;
+}
+
+.tree-cell:selected,
+.tree-cell:focused {
+    -fx-background-color: darkred;
+}
+
+.tree-cell:selected .label {
+    -fx-text-fill: white;
+}
+
+.tree-view .scroll-bar:horizontal .increment-arrow,
+.tree-view .scroll-bar:horizontal .decrement-arrow,
+.tree-view .scroll-bar:horizontal .increment-button,
+.tree-view .scroll-bar:horizontal .decrement-button {
+    -fx-padding: 0;
+}
+
+/* Snackbar */
+.jfx-snackbar-content {
+    -fx-background-color: black;
+}
+
+.jfx-snackbar-toast {
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+.jfx-snackbar-action .text {
+    -fx-fill: azure;
+    -fx-font-weight: bold;
+}

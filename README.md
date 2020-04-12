@@ -1,6 +1,6 @@
 # ###Under development 
 
-# OCPP_ChargingStation_2_0_1
+# Charging Station Simulator
 This is a simulator for the latest version of the OCPP [(Open Charge Point Protocol)](https://www.openchargealliance.org/) protocol, for the version 2.0.1.
 It is currently under development and will allow you to test the server part if you don't have a charging station for this purpose.
 
